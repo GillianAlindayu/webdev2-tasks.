@@ -1,0 +1,105 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Image Gallery Styles */
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+  }
+  
+  .image-gallery img {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Header Styles */
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: fade-in; 
+    transition: transform 0.5; 
+  }
+  
+  .image-gallery img {
+    margin: 10px;
+    transition: fade-in; 
+    transition: transform 0.5s; /* add a transition effect to the images */
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.1); /* scale the image up on hover */
+  }
+  
+  /* Add some animations to the images */
+  .image-gallery img:nth-child(1) {
+    animation: fade-in 4s; /* animate the first image */
+  }
+  
+  .image-gallery img:nth-child(2) {
+    animation: fade-in 4s; /* animate the second image with a delay */
+  }
+  
+  .image-gallery img:nth-child(3) {
+    animation: fade-in 4s; /* animate the third image with a delay */
+  }
+  
+  .imagw-gallery img:nth-child(4){
+    animation: fade-in 4s; /* animate the fourth image with a delay */
+  }
+
+  .image-gallery img:nth-child(5){
+    animation: fade-in 4s; /*animate the fifth image with the delay */
+
+  }
+
+  .image-gallery img:nth-child(6){
+    animation: fade-in 5s; /*animate the sixth image with the delay */
+  }
+
+  .image-gallery img:nth-child(7){
+    animation: fade-in 5s; /*animate the seventh image with the delay */
+  }
+
+  .image-gallery img:nth-child(8){
+    animation: fade-in 5s; /*animate the eighth image with the delay */
+  }
+
+  /* and so on... */
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
